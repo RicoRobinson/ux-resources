@@ -1,32 +1,26 @@
-import Image from "next/image";
-
 // components/Card.tsx
-export interface CardProps {}
+import Image from "next/image";
+import { ReactNode } from "react";
 
-const Card: React.FC<CardProps> = ({}) => {
+export interface CardProps {
+  title: string;
+  description: string;
+  children: ReactNode | ReactNode[];
+}
+
+const Card: React.FC<CardProps> = ({ title, description, children }) => {
   return (
-    <div className="w-full max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12 p-2 bg-white dark:bg-zinc-600">
-      <div className="relative flex flex-col min-w-0 break-words  border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-        <div className="relative">
-          <a className="block shadow-xl rounded-2xl">
-            <Image
-              src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-dashboard/assets/img/home-decor-1.jpg"
-              alt="img-blur-shadow"
-              className="max-w-full shadow-soft-2xl rounded-2xl"
-              width={1000}
-              height={100}
-            />
-          </a>
-        </div>
-        <div className="flex-auto px-1 pt-6">
-          <p className="">Project #2</p>
-          <h5>Modern</h5>
-          <p className="mb-6 leading-normal text-sm">Some description</p>
+    <div className="p-2 bg-white dark:bg-zinc-800 rounded-2xl max-w-sm shadow-lg">
+      <div className="relative flex flex-col min-w-0 break-words  border-0 bg-clip-border">
+        {children}
+        <div className="flex-auto p-2">
+          <h5>{title}</h5>
+          <p className="mb-6 leading-normal text-sm">{description}</p>
           <div className="flex items-center justify-between">
             <button
               type="button"
-              className="inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-xs hover:scale-102 active:shadow-soft-xs tracking-tight-soft border-fuchsia-500 text-fuchsia-500 hover:border-fuchsia-500 hover:bg-transparent hover:text-fuchsia-500 hover:opacity-75 hover:shadow-none active:bg-fuchsia-500 active:text-white active:hover:bg-transparent active:hover:text-fuchsia-500">
-              Button
+              className="animated-gradient inline-block animate-gradient px-6 py-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs">
+              View
             </button>
           </div>
         </div>
@@ -35,4 +29,28 @@ const Card: React.FC<CardProps> = ({}) => {
   );
 };
 
-export default Card;
+export interface CardMediaProps {
+  alt: string;
+  imageSrc: string;
+  height?: number;
+  width?: number;
+}
+
+const CardMedia: React.FC<CardMediaProps> = ({
+  alt,
+  imageSrc,
+  height = 600,
+  width = 600,
+}) => {
+  return (
+    <Image
+      src={imageSrc}
+      alt={alt}
+      className="w-full rounded-xl mb-4 block shadow-lg bg-white"
+      width={width}
+      height={height}
+    />
+  );
+};
+
+export { Card, CardMedia };

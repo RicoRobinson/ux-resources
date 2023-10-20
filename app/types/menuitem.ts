@@ -1,4 +1,4 @@
-// types.ts
+// menuitem.ts
 export interface MenuItem {
   id: number;
   label: string;
