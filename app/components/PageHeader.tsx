@@ -6,7 +6,7 @@ export interface PageHeaderProps {
 
 const PageHeader: React.FC<PageHeaderProps> = ({ title, description }) => {
   return (
-    <div className="z-10 max-w-5xl w-full items-start justify-between lg:flex">
+    <div className="z-10 w-full items-start justify-between lg:flex">
       <div>
         <h2 className="text-4xl font-bold mb-4">{title}</h2>
         <p>{description}</p>
