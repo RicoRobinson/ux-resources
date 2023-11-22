@@ -31,6 +31,46 @@
       "description": "Human Centered Design tools, guides and methodology.",
       "thumbnail": "design-kit.png",
       "url": "https://www.designkit.org/"
+    },
+    {
+      "id": 5,
+      "title": "Bézier curves",
+      "category": "Article",
+      "description": "Richard Ekwonye explains bézier curves in-depth with an interactive article.",
+      "thumbnail": "bezier-curves-article.png",
+      "url": "https://blog.richardekwonye.com/bezier-curves"
+    },
+    {
+      "id": 6,
+      "title": "Laws of UX",
+      "category": "Theory",
+      "description": "Laws of UX is a collection of best practices that designers can consider when building UI's.",
+      "thumbnail": "laws-of-ux.png",
+      "url": "https://lawsofux.com/"
+    },
+    {
+      "id": 7,
+      "title": "User Experience: Insights Into Consistency in Design",
+      "category": "Article",
+      "description": "Welcome to read what is design consistency, why it is important, what types of consistency exist, and how to reach it in an app or website you design.",
+      "thumbnail": "user-experience-insights-into-consistency-in-design.png",
+      "url": "https://blog.tubikstudio.com/design-consistency/"
+    },
+    {
+      "id": 8,
+      "title": "UX research Tools Map",
+      "category": "Tools",
+      "description": "The only illustrated guide to the ever-changing world of user research software.",
+      "thumbnail": "ux-research-tools-map.png",
+      "url": "https://www.userinterviews.com/ux-research-tools-map-2023"
+    },
+    {
+      "id": 9,
+      "title": "The ultimate guide to proper use of animation in UX",
+      "category": "Animation",
+      "description": "The ultimate guide to proper use of animation in UX. All the main principles & rules in one place.",
+      "thumbnail": "the-ultimate-guide-to-proper-use-of-animation-in-ux.png",
+      "url": "https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9"
     }
   ]
 }

@@ -32,13 +32,21 @@ const CardMedia: React.FC<CardMediaProps> = ({
   width = 600,
 }) => {
   return (
-    <Image
-      src={`/assets/img/${imageSrc}`}
-      alt={alt}
-      className="w-full rounded-xl mb-4 -mt-8 block shadow-lg bg-gray-600"
-      width={width}
-      height={width / 2}
-    />
+    <div className="relative">
+      <div
+        className="colored-shadow absolute z-0"
+        style={{
+          backgroundImage: `url(/assets/img/${imageSrc})`,
+        }}
+      />
+      <Image
+        src={`/assets/img/${imageSrc}`}
+        alt={alt}
+        className="w-full rounded-xl mb-6 -mt-8 block bg-gray-600 relative z-10"
+        width={width}
+        height={width / 2}
+      />
+    </div>
   );
 };
 
