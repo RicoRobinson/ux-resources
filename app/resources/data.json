@@ -5,7 +5,7 @@
       "title": "Interaction Design Foundation",
       "category": "Community",
       "description": "Online UX design courses by experts, with industry-recognized certificates",
-      "thumbnail": "ixdf-logo-full-expanded.svg",
+      "thumbnail": "interaction-design-foundation.png",
       "url": "https://www.interaction-design.org/"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Unsplash",
       "category": "Photos",
       "description": "Curated collection of high resolution stock photos by photographers.",
-      "thumbnail": "ixdf-logo-full-expanded.svg",
+      "thumbnail": "unsplash.png",
       "url": "https://unsplash.com/"
     },
     {
@@ -21,32 +21,16 @@
       "title": "Adobe Color Wheel",
       "category": "Colors",
       "description": "Create color schemes with the color wheel or browse thousands of color combinations.",
-      "thumbnail": "ixdf-logo-full-expanded.svg",
-      "url": "https://color.adobe.com/?ref=neede.co"
+      "thumbnail": "adobe-color-wheel--dark.png",
+      "url": "https://color.adobe.com/"
     },
     {
       "id": 4,
-      "title": "Interaction Design Foundation",
-      "category": "Community",
-      "description": "Online UX design courses by experts, with industry-recognized certificates",
-      "thumbnail": "ixdf-logo-full-expanded.svg",
-      "url": "https://www.interaction-design.org/"
-    },
-    {
-      "id": 5,
-      "title": "Unsplash",
-      "category": "Photos",
-      "description": "Curated collection of high resolution stock photos by photographers.",
-      "thumbnail": "ixdf-logo-full-expanded.svg",
-      "url": "https://unsplash.com/"
-    },
-    {
-      "id": 6,
-      "title": "Adobe Color Wheel",
-      "category": "Colors",
-      "description": "Create color schemes with the color wheel or browse thousands of color combinations.",
-      "thumbnail": "ixdf-logo-full-expanded.svg",
-      "url": "https://color.adobe.com/?ref=neede.co"
+      "title": "Design Kit",
+      "category": "Toolkits",
+      "description": "Human Centered Design tools, guides and methodology.",
+      "thumbnail": "design-kit.png",
+      "url": "https://www.designkit.org/"
     }
   ]
 }

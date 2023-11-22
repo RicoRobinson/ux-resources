@@ -9,14 +9,9 @@ export interface CardProps {
   title: string;
 }
 
-const Card: React.FC<CardProps> = ({
-  children,
-  description,
-  onClick: onClickProps,
-  title,
-}) => {
+const Card: React.FC<CardProps> = ({ children }) => {
   return (
-    <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl max-w-sm shadow-lg">
+    <div className="p-4 bg-white dark:bg-neutral-800 rounded-2xl max-w-sm shadow-lg">
       <div className="relative flex flex-col min-w-0 break-words border-0 bg-clip-border">
         {children}
       </div>
@@ -34,16 +29,15 @@ export interface CardMediaProps {
 const CardMedia: React.FC<CardMediaProps> = ({
   alt,
   imageSrc,
-  height = 600,
   width = 600,
 }) => {
   return (
     <Image
-      src={`./assets/img/${imageSrc}`}
+      src={`/assets/img/${imageSrc}`}
       alt={alt}
-      className="w-full rounded-xl mb-4 -mt-8 block shadow-lg bg-slate-600"
+      className="w-full rounded-xl mb-4 -mt-8 block shadow-lg bg-gray-600"
       width={width}
-      height={height}
+      height={width / 2}
     />
   );
 };
